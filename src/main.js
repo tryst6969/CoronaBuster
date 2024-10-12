@@ -1,6 +1,6 @@
 import Phaser from 'phaser'
 
-import HelloWorldScene from './scenes/HelloWorldScene'
+import GameOverScene from './scenes/GameOverScene';
 import CoronaBusterScene from './scenes/CoronaBusterScene'
 
 const config = {
@@ -13,7 +13,7 @@ const config = {
 		gravity: { y: 0 },
 	  },
 	},
-	scene: [CoronaBusterScene],
+	scene: [CoronaBusterScene, GameOverScene],
   
 	scale: { 
 	  mode: Phaser.Scale.FIT, 
